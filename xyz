@@ -1,0 +1,16 @@
+#Let’s say I give you a list saved in a variable: a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100].
+#Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.
+
+#more understandable with more lines
+list_a = [1,4,5,4,3,56,7,7,4,23,2,3,4,34,4]
+list_b = []
+for x in list_a:
+    if x % 2 == 0:
+        list_b.append(x)
+print(list_b)
+
+
+#one liner
+
+list_c = [5,6,3,2,2,4,6,7,7,5,2,11,2,54,76]
+print([x for x in list_c if x % 2 == 0])
